@@ -27,5 +27,5 @@
 
 <hr>
 
-[Click Here To Check Live Demo](https://ayushkumar731.github.io/to-to-list/)
+[Click Here To Check Live Demo](https://ayushkumar731.github.io/todo-list-app/)
 
