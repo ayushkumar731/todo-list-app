@@ -74,13 +74,10 @@ header span{
 }
 
 #list-box{
-  width: 40%;
+  width: 44%;
   background-color: white;
-  transform: scale(1.1);
-  box-shadow: 1px 1px 2px 3px rgb(197, 195, 195);
   margin: auto;
   padding: 10px;
-  height:auto;
 }
 
 .list-item{

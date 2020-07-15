@@ -103,10 +103,10 @@ function editTask(index){
 // save button function
 
 function saveTask(){
-    let saveText=document.getElementById('saveText').value;
+    let saveIndex=document.getElementById('saveText').value;
     let task=localStorage.getItem('task');
     tasks=JSON.parse(task);
-    tasks[saveText]=addTxt.value;
+    tasks[saveIndex]=addTxt.value;
     localStorage.setItem('task',JSON.stringify(tasks));
     saveBtn.style.display="none";
     addBtn.style.display="inline-block";
@@ -142,6 +142,9 @@ deleteAllBtn.addEventListener('click',function(){
     addBtn.style.display="inline-block";
     showContent();
 });
+
+
+//enter functionalliy
 
 addTxt.addEventListener('keydown',function(e){
     if(event.key === 'Enter'){
