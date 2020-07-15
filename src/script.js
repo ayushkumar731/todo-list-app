@@ -138,6 +138,8 @@ deleteAllBtn.addEventListener('click',function(){
         tasks=[];
     }
     localStorage.setItem('task',JSON.stringify(tasks));
+    saveBtn.style.display="none";
+    addBtn.style.display="inline-block";
     showContent();
 });
 
