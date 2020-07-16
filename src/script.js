@@ -60,6 +60,9 @@ function createTask(task,index){
     var div=document.createElement('div');
     div.setAttribute('class','list-item');
 
+    var checkBox=document.createElement('input');
+    checkBox.type="checkbox";
+
     var para=document.createElement('p');
     para.setAttribute('class','text');
     para.innerHTML=task;
@@ -74,6 +77,7 @@ function createTask(task,index){
     deleteBtn.setAttribute("onclick","deleteBtn("+index+")");
     deleteBtn.innerHTML="Delete Task";
 
+    div.appendChild(checkBox);
     div.appendChild(para);
     div.appendChild(completeBtn);
     div.appendChild(deleteBtn);
@@ -150,7 +154,19 @@ addTxt.addEventListener('keydown',function(e){
     if(event.key === 'Enter'){
         addTask()
     }
-})
+});
+
+function handlerEvent(e){
+    var txt=e.target.parentElement;
+    if(e.target.checked){
+        txt.style.textDecoration="line-through";
+    }
+    else{
+        txt.style.textDecoration="none";
+    }
+}
+
+document.addEventListener('click',handlerEvent);
 
 //initialize content
 showContent();
