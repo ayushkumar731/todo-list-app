@@ -35,9 +35,9 @@ header span{
 #addText{
   font-size: 1.3rem;
   padding: 5px;
-  display: inline-block;
+  display:block;
   margin-bottom: 20px;
-  width: 65%;
+  width: 100%;
   margin-bottom:1rem;
 }
 #addBtn{
@@ -132,21 +132,6 @@ header span{
     width: 100%;
     margin: 2rem auto 1.1rem;
     transform: none;
-  }
-  #addText{
-    width: 60%;
-  }
-  #addBtn{
-    padding: 7px;
-    font-size: 1rem;
-  }
-  #saveBtn{
-    padding: 7px;
-    font-size: 1rem;
-  }
-  #deleteAll{
-    padding: 7px;
-    font-size: 1rem;
   }
   #list-box{
     width: 100%;
