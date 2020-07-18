@@ -91,10 +91,18 @@ header span{
 .list-item:nth-child(2n+1){
   background-color: rgb(230, 220, 220);
 }
+.list-item input{
+  zoom: 1.5;
+  margin-right: 5px;
+  width: 5%;
+}
 .text{
   font-size: 1.3rem;
   color: black;
   width: 65%;
+  word-wrap: break-word;
+  line-height: 1.5rem;
+  text-align: justify;
 }
 .cmpltBtn{
   font-size: 1rem;
@@ -115,4 +123,58 @@ header span{
   cursor: pointer;
   padding: 8px;
   color: white;
+}
+
+/* media query */
+
+@media screen and (max-width:900px){
+  #search-box{
+    width: 100%;
+    margin: 2rem auto 1.1rem;
+    transform: none;
+  }
+  #addText{
+    width: 60%;
+  }
+  #addBtn{
+    padding: 7px;
+    font-size: 1rem;
+  }
+  #saveBtn{
+    padding: 7px;
+    font-size: 1rem;
+  }
+  #deleteAll{
+    padding: 7px;
+    font-size: 1rem;
+  }
+  #list-box{
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    padding: 5px;
+  }
+  .cmpltBtn{
+    font-size: 1rem;
+    background-color: darkblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    margin: 5px;
+    width: 15%;
+  
+  }
+  .dltBtn{
+    font-size: 1rem;
+    background-color: red;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    width: 15%;
+  }
+
 }
